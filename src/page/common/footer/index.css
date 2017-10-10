@@ -1,0 +1,19 @@
+/*
+* @Author: 第九
+* @Date:   2017-10-10 18:21:09
+* @Last Modified by:   第九
+* @Last Modified time: 2017-10-10 18:33:00
+*/
+.footer .links{
+	margin:15px 0;
+	text-align: center;
+	color: #666;
+}
+.footer .link{
+	padding: 10px; 
+}
+.footer .copyRight{
+	text-align: center;
+	color: #666;
+	margin:10px 0;
+}

@@ -2,7 +2,7 @@
 * @Author: 第九
 * @Date:   2017-10-09 17:19:04
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-09 17:43:56
+* @Last Modified time: 2017-10-10 15:14:12
 */
 var Hogan = require('hogan');
 var conf = {
@@ -61,7 +61,7 @@ var _mm = {
 	},
 	//重新登陆
 	doLogin : function(){
-		window.location.href = './user-login.html?redirect' + = encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 	goHome : function(){
         window.location.href = './index.html';

@@ -18,9 +18,9 @@ var getHtmlConfig = function(name,title){
 }
 var config = {
 	entry: {
-		'common' : ['./src/page/common/index.js'],
-		'index' : ['./src/page/index/index.js'],
-		'login' : ['./src/page/login/index.js']
+		'common' 		: ['./src/page/common/index.js'],
+		'index' 		: ['./src/page/index/index.js'],
+		'user-login' 	: ['./src/page/login/index.js']
 	},
 	output: {
 		path : './dist',
@@ -30,6 +30,15 @@ var config = {
 	externals : {
         'jquery' : 'window.jQuery'
     },
+    resolve : {
+    	alias: {
+    		node_modules 	: __dirname + '/node_modules',
+    		util 			: __dirname + '/src/util',
+    		page 			: __dirname + '/src/page',
+    		service 		: __dirname + '/src/service',
+    		image 			: __dirname + '/src/image'
+    	}
+    },
 	module : {
 		loaders : [
 			{
@@ -38,7 +47,7 @@ var config = {
 				//loader:"style-loader!css-loader"
 			},
 			{
-		        test: /\.(png|jpg|jpeg|gif)$/,
+		        test:/\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/,
 		        loader: 'url-loader?limit=1000&name=resource/[name].[ext]'
 			},
 			{test : /\.string$/,loader: 'html-loader'}
@@ -53,7 +62,9 @@ var config = {
      		filename : 'js/base.js'
      	}),
    		//html模板的处理
-     	new HtmlWebPackPlugin(getHtmlConfig('index','首页'))
+     	new HtmlWebPackPlugin(getHtmlConfig('index','首页')),
+     	new HtmlWebPackPlugin(getHtmlConfig('user-login','登陆'))
+
     ]
 
 };

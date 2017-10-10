@@ -3,8 +3,64 @@
 * @Author: 第九
 * @Date:   2017-10-09 14:54:44
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-09 15:15:51
+* @Last Modified time: 2017-10-10 18:33:27
 */
-body{
+.user-wrap{
+	padding: 40px 0;
+	background: #e72955;
+}
+.user-con{
+	position: relative;
+	width: 400px;
 	background: #fff;
+}	
+.user-wrap .user-title{
+	padding: 20px 0;
+	font-size: 17px;
+	font-weight: bold;
+	color: #666;
+	border-bottom:1px solid #eee;
+	text-align: center;
+}
+.user-wrap .user-box{
+	padding: 20px;
+}
+.user-wrap .user-box .user-item{
+	position: relative;
+	margin-bottom: 20px;
+	border: 1px solid #bdbdbd;
+}
+.user-wrap .user-label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 40px;
+	line-height: 36px;
+	font-size: 20px;
+	color: #d3d3d3;
+	background: #f3f3f3;
+	text-align: center;
+	border-right: 1px solid #bdbdbd;
+}
+.user-wrap .user-input{
+	padding: 10px 0 10px 50px;
+	width:300px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 15px;
+	color: #333;
+	border: none;
+	outline: none;
+}
+.user-wrap .user-btn{
+	display: inline-block;
+	padding: 6px 0;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	background: #e4393c;
+	cursor: pointer;
+	user-select: none;
 }

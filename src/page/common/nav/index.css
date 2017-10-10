@@ -1,0 +1,27 @@
+/*
+* @Author: 第九
+* @Date:   2017-10-10 14:05:13
+* @Last Modified by:   第九
+* @Last Modified time: 2017-10-10 15:59:30
+*/
+.nav-site{
+	height: 30px;
+	line-height: 30px;
+	background: #eee;
+}
+/* left */
+.nav-site .user-info{
+	float: left;
+}
+.nav-site .user-info .link{
+	margin-right: 10px; 
+}
+
+/* right */
+.nav-site .nav-list{
+	float: right;
+}
+.nav-site .nav-list .nav-item{
+	float: left;
+	margin-right: 10px;
+}

@@ -1,0 +1,40 @@
+/*
+* @Author: 第九
+* @Date:   2017-10-10 11:25:40
+* @Last Modified by:   第九
+* @Last Modified time: 2017-10-10 12:04:25
+*/
+.header .logo{
+	display: block;
+	width: 150px;
+	text-align: center;
+	position: absolute;
+	top: 35px;
+	left: 50px;
+	font-size: 36px;
+	font-weight: bold;
+	color: #c60023;
+	cursor: pointer;
+	text-decoration: none;
+}
+.header .search-form{
+	padding: 40px 0 20px 250px;
+}
+.header .search-form .search-input{
+	width: 550px;
+	padding: 10px 0 10px 10px;
+	border:2px solid #c60023;
+	font-size: 16px;
+	outline: none;
+}
+.header .search-form .search-btn{
+	position: absolute;
+	border:0;
+	width:80px;
+	height: 42px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #fff;
+	background: #c60023;
+	cursor: pointer;
+}
