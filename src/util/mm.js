@@ -2,7 +2,7 @@
 * @Author: 第九
 * @Date:   2017-10-09 17:19:04
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-10 15:14:12
+* @Last Modified time: 2017-10-11 11:51:03
 */
 var Hogan = require('hogan');
 var conf = {
@@ -42,9 +42,9 @@ var _mm = {
 	},
 	//获取url参数
 	getUrlParam : function(name){
-		var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
-		var result = window.location.search.substr(1).macth(reg);
-		return decodeURIComponent(result[2]) || null;
+		var reg     = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
+        var result  = window.location.search.substr(1).match(reg);
+        return result ? decodeURIComponent(result[2]) : null;
 	},
 	//渲染模板
 	renderHtml : function(htmlTemplate,data){

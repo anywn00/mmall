@@ -2,12 +2,12 @@
 * @Author: 第九
 * @Date:   2017-10-10 11:25:49
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-10 15:25:21
+* @Last Modified time: 2017-10-11 17:34:17
 */
 require('./index.css');
 var _mm = require('util/mm.js');
 
-var header = {
+var page = {
 	init: function(){
 		this.onLoad();
 		this.bindEvent();
@@ -39,4 +39,4 @@ var header = {
 	}
 };
 
-header.init();
+page.init();

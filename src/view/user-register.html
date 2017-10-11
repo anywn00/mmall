@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= require('html-loader!./layout/head-common.html')%>
+		<title><%= htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav-simple.html')%>
+		<div class="user-wrap">
+			<div class="user-con w">
+				<div class="user-title">
+					新用户注册
+				</div>		
+				<div class="user-list">
+					<div class="err-item">
+						<i class="fa fa-minus-circle err-icon"></i>
+						<p class="err-msg">Err</p>
+					</div>
+					<div class="user-item">
+						<label for="username" class="label">
+							<i class="fa fa-user"></i>
+						</label>
+						<input class="user-input" id="username" placeholder="请输入用户名">
+					</div>
+					<div class="user-item">
+						<label for="password" class="label">
+							<i class="fa fa-lock"></i>
+						</label>
+						<input class="user-input" type="password" id="password" placeholder="请输入密码">
+					</div>
+					<div class="user-item">
+						<label for="password-confirm" class="label">
+							<i class="fa fa-lock"></i>
+						</label>
+						<input class="user-input" type="password" id="password-confirm" placeholder="请再次输入密码">
+					</div>
+					<div class="user-item">
+						<label for="phone" class="label">
+							<i class="fa fa-phone"></i>
+						</label>
+						<input class="user-input" id="phone" placeholder="请输入电话">
+					</div>
+					<div class="user-item">
+						<label for="email" class="label">
+							<i class="fa fa-envelope"></i>
+						</label>
+						<input class="user-input" id="email" placeholder="请输入邮箱">
+					</div>
+					<div class="user-item">
+						<label for="question" class="label">
+							<i class="fa fa-question"></i>
+						</label>
+						<input class="user-input" id="question" placeholder="请输入密码提示问题">
+					</div>
+					<div class="user-item">
+						<label for="answer" class="label">
+							<i class="fa fa-key"></i>
+						</label>
+						<input class="user-input" id="answer" placeholder="请输入问题的答案">
+					</div>
+					<a class="user-btn" id="submit">注册</a>
+					<div class="user-tip">
+						<a href="./user-login.html" class="link">已有账号去登陆>></a>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<%= require('html-loader!./layout/footer.html')%>
+	</body>
+</html>

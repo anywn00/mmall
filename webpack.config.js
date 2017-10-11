@@ -5,6 +5,7 @@ var webpack = require("webpack");
 
 
 // 环境变量配置，dev / online
+var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 
 var getHtmlConfig = function(name,title){
 	return {
@@ -20,11 +21,13 @@ var config = {
 	entry: {
 		'common' 		: ['./src/page/common/index.js'],
 		'index' 		: ['./src/page/index/index.js'],
-		'user-login' 	: ['./src/page/login/index.js']
+		'user-login' 	: ['./src/page/login/index.js'],
+		'user-register' : ['./src/page/register/index.js'],
+		'result' 		: ['./src/page/result/index.js']
 	},
 	output: {
 		path : './dist',
-		publicPath : '/dist',
+		publicPath : '/dist/',
 		filename: 'js/[name].js'
 	},
 	externals : {
@@ -63,11 +66,14 @@ var config = {
      	}),
    		//html模板的处理
      	new HtmlWebPackPlugin(getHtmlConfig('index','首页')),
-     	new HtmlWebPackPlugin(getHtmlConfig('user-login','登陆'))
+     	new HtmlWebPackPlugin(getHtmlConfig('user-login','登陆')),
+     	new HtmlWebPackPlugin(getHtmlConfig('user-register','注册')),
+     	new HtmlWebPackPlugin(getHtmlConfig('result','操作结果'))
 
     ]
 
 };
-config.entry.common.push('webpack-dev-server/client?http://localhost:8088/')
-
+if(WEBPACK_ENV === 'dev'){
+	config.entry.common.push('webpack-dev-server/client?http://localhost:8088/')
+}
 module.exports = config;

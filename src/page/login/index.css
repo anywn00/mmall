@@ -3,7 +3,7 @@
 * @Author: 第九
 * @Date:   2017-10-09 14:54:44
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-10 18:33:27
+* @Last Modified time: 2017-10-11 11:16:17
 */
 .user-wrap{
 	padding: 40px 0;
@@ -63,4 +63,31 @@
 	background: #e4393c;
 	cursor: pointer;
 	user-select: none;
+}
+
+/* psw-reset register */
+.link-item{
+	margin: 15px auto 0;
+	text-align: right;
+}
+.user-wrap .link{
+	margin-right: 10px;
+}
+
+/* Error */
+.err-item{
+	position: relative;
+	padding: 4px 0 4px 40px;
+	margin-bottom: 10px;
+	color: red;
+	background: #fde9e9;
+	border:1px solid red;
+	display: none;
+}
+.err-item .err-icon{
+	position: absolute;
+	left: 14px;
+	top: 50%;
+	margin-top: -7px;
+	font-size: 14px; 
 }

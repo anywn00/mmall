@@ -2,7 +2,7 @@
 * @Author: 第九
 * @Date:   2017-10-10 14:05:13
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-10 15:59:30
+* @Last Modified time: 2017-10-11 14:44:40
 */
 .nav-site{
 	height: 30px;
@@ -13,8 +13,11 @@
 .nav-site .user-info{
 	float: left;
 }
+.nav-site .site-user.login{
+	display: none;
+}
 .nav-site .user-info .link{
-	margin-right: 10px; 
+	margin-left: 10px; 
 }
 
 /* right */

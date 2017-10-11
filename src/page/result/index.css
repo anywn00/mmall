@@ -1,0 +1,26 @@
+/*
+* @Author: 第九
+* @Date:   2017-10-11 17:49:52
+* @Last Modified by:   第九
+* @Last Modified time: 2017-10-11 18:23:13
+*/
+.result-wrap{
+	margin-top: 20px;
+	padding: 30px 0;
+	background: #fff;
+}
+.result-wrap .result-con{
+	display: none;
+	text-align: center;
+	color: #555;
+}
+.result-wrap .result-content{
+	margin-top: 30px;
+}
+.result-wrap .link{
+	padding: 5px 10px;
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+	border: 1px solid #bdbdbd;
+}

@@ -1,0 +1,94 @@
+/*
+* @Author: 第九
+* @Date:   2017-10-11 15:18:44
+* @Last Modified by:   第九
+* @Last Modified time: 2017-10-11 18:16:37
+*/
+.user-wrap{
+	padding: 40px 0;
+	background: #e72955;
+}
+.user-wrap .user-con{
+	width: 400px;
+	background: #fff;
+}
+/* title section */
+.user-wrap .user-title{
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #666;	
+	text-align: center;
+	border-bottom: 1px solid #bdbdbd;
+}
+
+/* list section */
+.user-wrap .user-list{
+	padding: 20px;
+}
+
+.user-wrap .user-list .user-item{
+	position: relative;
+	border:1px solid #bdbdbd;
+	margin-bottom: 20px;
+}
+.user-wrap .user-item .label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 35px;
+	text-align: center;
+	line-height: 39px;
+	font-size: 17px;
+	color: #d3d3d3;
+	border-right: 1px solid #bdbdbd;
+	background: #f3f3f3;
+}
+.user-wrap .user-item .user-input{
+	padding: 10px 0 10px 40px;
+	width: 300px;
+	line-height: 18px;
+	color: #333;
+	border: none;
+	outline: none;
+}
+
+.user-wrap .user-btn{
+	padding: 5px 0;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	background: #e4393c;
+	cursor: pointer;
+	user-select: none;
+}
+.user-wrap .user-tip{
+	text-align: right;
+	margin-top: 20px;
+}
+
+/* err */
+.err-item{
+	position: relative;
+	margin-bottom: 10px; 
+	background: #fde9e9;
+	border: 1px solid red;
+	display: none;
+}
+.err-item .err-icon{
+	position: absolute;
+	left: 17px;
+	top: 50%;
+	margin-top: -8px;
+	color: red;
+	line-height: 17px;
+}
+.err-item .err-msg{
+	padding: 5px 0 5px 40px;
+	line-height: 20px;
+	color: red;
+	font-size: 14px;
+}
