@@ -2,5 +2,117 @@
 * @Author: 第九
 * @Date:   2017-10-09 15:14:34
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-10 09:19:08
+* @Last Modified time: 2017-10-12 15:49:09
 */
+/* left keywords */
+.keywords-list{
+	margin-right: 10px;
+	float: left;
+	width:240px;
+	height: 350px;
+	padding: 10px 0;
+	background: #666;
+}
+.keywords-list .link-item{
+	padding-left:10px;
+	height: 35px;
+	line-height: 35px;
+}
+.keywords-list .link-item:hover{
+	background: #999;
+}
+.keywords-list .link{
+	margin-right: 10px;
+	font-size: 14px;
+	color: #fff; 
+}
+.keywords-list .link:hover{
+	color: red;
+}
+
+/* right banner */
+.banner-con{
+	position: relative;	
+	width: 830px;
+	height: 370px;
+	float: left;
+}
+.banner-con .loading{
+	margin-top: 160px;
+}
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+.banner-con .banner-img{
+	width: 100%;
+	height: 370px;
+}
+.banner-con .banner-arrow{
+	position: absolute;
+	top: 160px;
+	width: 30px;
+	padding: 10px 0;
+	font-size: 28px;
+	color: #fff;
+	text-align: center;
+	background: rgba(0,0,0,.2);
+	cursor: pointer;
+}
+.banner-con .banner-arrow.next{right: 0}
+
+
+/* floor  */
+.floor-wrap{
+	margin-top: 20px;
+	
+}
+/* title style */
+.floor-wrap .floor-title{
+	line-height: 50px;
+	color: #d58717;
+	font-weight: 400;
+	border-bottom: 1px solid #d58717;
+}
+/* 每一层改变颜色 */
+.floor-wrap:nth-child(2) .floor-title{
+	color: #3b838c;
+	border-bottom: 1px solid #3b838c;
+} 
+.floor-wrap:nth-child(3) .floor-title{
+	color: #a93931;
+	border-bottom: 1px solid #a93931;
+}
+.floor-wrap:nth-child(4) .floor-title{
+	color: #488bad;
+	border-bottom: 1px solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+	color: #642663;
+	border-bottom: 1px solid #642663;
+}
+.floor-wrap .floor-con{
+	margin-right: -20px;	
+	overflow: hidden;
+}
+.floor-wrap .floor-item{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 220px;
+	margin: 20px 20px 20px 0;
+	background: #fff;
+}
+.floor-wrap .floor-item .floor-text{
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	font-size: 14px;
+	color: #666;
+}
+.floor-wrap .floor-item .floor-img{
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	width: 80%;
+	height: 70%;
+	border: none;
+}

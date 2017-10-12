@@ -2,7 +2,7 @@
 * @Author: 第九
 * @Date:   2017-10-09 17:19:04
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-11 11:51:03
+* @Last Modified time: 2017-10-12 11:44:26
 */
 var Hogan = require('hogan');
 var conf = {
@@ -48,8 +48,9 @@ var _mm = {
 	},
 	//渲染模板
 	renderHtml : function(htmlTemplate,data){
-		var template = Hogan.compile(htmlTemplate);
-		return template.render(date);
+		var template = Hogan.compile(htmlTemplate),
+			result 	 = template.render(data);
+		return result;
 	},
 	//成功提示
 	successTips : function(msg){

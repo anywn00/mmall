@@ -2,7 +2,7 @@
 * @Author: 第九
 * @Date:   2017-10-10 09:12:46
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-10 11:20:06
+* @Last Modified time: 2017-10-12 15:06:21
 */
 /* css reset */
 *{
@@ -16,6 +16,7 @@ body{
 li{
 	list-style: none;
 }
+a{text-decoration: none;}
 img{
 	display: block;
 	border:none;
