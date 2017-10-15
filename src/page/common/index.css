@@ -1,8 +1,8 @@
 /*
 * @Author: 第九
 * @Date:   2017-10-10 09:12:46
-* @Last Modified by:   第九
-* @Last Modified time: 2017-10-12 15:06:21
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-14 15:08:33
 */
 /* css reset */
 *{
@@ -84,6 +84,7 @@ input[type='checkbox']{
 	border: none;
 	text-decoration: none;
 	user-select: none;
+	cursor: pointer;
 }
 .btn-min{
 	height: 25px;

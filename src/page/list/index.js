@@ -1,8 +1,8 @@
 /*
 * @Author: 第九
 * @Date:   2017-10-12 16:03:54
-* @Last Modified by:   第九
-* @Last Modified time: 2017-10-12 20:51:09
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-12 23:13:52
 */
 require('./index.css');
 require('../common/nav/index.js');
@@ -55,6 +55,7 @@ var page = {
 					_this.data.orderBy = 'desc';
 				}
 			}
+			_this.loadList();
 		});
 	},
 	loadList: function(){

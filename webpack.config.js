@@ -21,6 +21,7 @@ var config = {
 	entry: {
 		'common' 		: ['./src/page/common/index.js'],
 		'index' 		: ['./src/page/index/index.js'],
+		'detail' 		: ['./src/page/detail/index.js'],
 		'user-login' 	: ['./src/page/login/index.js'],
 		'user-register' : ['./src/page/register/index.js'],
 		'result' 		: ['./src/page/result/index.js'],
@@ -68,6 +69,7 @@ var config = {
    		//html模板的处理
      	new HtmlWebPackPlugin(getHtmlConfig('index','首页')),
      	new HtmlWebPackPlugin(getHtmlConfig('list','列表')),
+     	new HtmlWebPackPlugin(getHtmlConfig('detail','详情')),
      	new HtmlWebPackPlugin(getHtmlConfig('user-login','登陆')),
      	new HtmlWebPackPlugin(getHtmlConfig('user-register','注册')),
      	new HtmlWebPackPlugin(getHtmlConfig('result','操作结果'))

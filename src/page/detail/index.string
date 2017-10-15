@@ -1,0 +1,47 @@
+<div class="into-wrap">
+	<div class="p-img-wrap">
+		<div class="main-img-con">
+			<img src="{{imageHost}}{{mainImage}}" alt="{{name}}" class="p-img">
+		</div>
+		<ul class="p-img-list">
+			{{#imgArr}}
+			<li class="p-img-item">
+				<img src="{{imageHost}}{{.}}" alt="{{name}}" class="p-img">
+			</li>
+			{{/imgArr}}
+			
+		</ul>
+	</div>
+	<div class="p-into-wrap">
+		<p class="p-name">{{name}}
+		</p>
+		<p class="p-subtitle">{{subtitle}}</p>
+		<div class="into-item p-price-con">
+			<span class="label">价格：</span>
+			<span class="p-price">￥{{price}}</span>
+		</div>
+		<div class="into-item p-quantity-con">
+			<span class="label">库存：</span>
+			<span class="p-quantity-con">{{stock}}</span>
+		</div>
+		<div class="into-item">
+			<span class="label">数量：</span>
+			<input type="text" readonly="true" value="1" class="p-count">
+			<span class="p-count-btn plus">+</span>
+			<span class="p-count-btn min">-</span>
+		</div>
+		<div class="into-item">
+			<a class="btn product-cart-btn">加入购物车</a>
+		</div>
+	</div>
+</div>
+<div class="detail-wrap">
+	<div class="detail-table-con">
+		<ul class="table-list">
+			<li class="table-item active">商品详情</li>
+		</ul>
+	</div>
+	<div class="detail-con">
+		{{{detail}}}
+	</div>
+</div>

@@ -1,0 +1,124 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-14 12:19:50
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-14 16:21:06
+*/
+.into-wrap{
+	overflow: hidden;
+}
+
+/* 左侧图片部分 */
+.into-wrap .p-img-wrap{
+	float: left;
+	width: 400px;
+}
+.into-wrap .main-img-con{
+	height: 400px;
+}
+
+.into-wrap .p-img{
+	width: 100%;
+	height: 100%;
+}
+.into-wrap .p-img-list{
+	overflow: hidden;
+}
+.into-wrap .p-img-item{
+	float: left;
+	width: 74px;
+	height: 74px;
+	border: 2px solid #eee;
+	padding: 0 10px;
+	margin-right: 2px;
+	background: #fff;
+}
+.into-wrap .p-img-item:hover{
+	border: 2px solid #c60023;
+}
+
+/* 右侧信息部分 */
+.into-wrap .p-into-wrap{
+	margin-left: 420px;
+	padding: 0 10px;
+}
+.into-wrap .p-into-wrap .p-name{
+	font-size: 20px;
+	color: #333;
+}
+.into-wrap .p-into-wrap .p-subtitle{
+	line-height: 30px;
+	color: #c60023;
+}
+.into-wrap .p-into-wrap .into-item{
+	position: relative;
+	padding: 10px;
+	margin-bottom: 10px;
+	user-select: none;
+}
+.into-wrap .p-into-wrap .p-price-con{
+ 	background: #eee;
+ }
+
+.into-wrap .into-item .label{
+	display: inline-block;
+	width: 50px;
+	color: #999;
+}
+.into-wrap .p-into-wrap .p-price{
+	font-size: 17px;
+	color: #c60023;
+}
+
+.into-wrap .into-item .p-count{
+	margin-right: 7px;
+	width: 40px;
+	height: 35px;
+	line-height: 35px;
+	color: #333;
+	text-align: center;
+	border: 1px solid #ccc;
+	outline: none;
+ }
+
+ .into-wrap .into-item .p-count-btn{
+  	position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+ }
+  .into-wrap .into-item .p-count-btn.min{
+  	bottom: 10px;
+  }
+
+  /* 商品详情 */
+.detail-wrap{
+	text-align: center;
+}
+.detail-wrap .table-list{
+  	margin-top: 20px;
+  	background: #eee;
+  	border-right: 1px solid #ccc;
+  	border-bottom: 2px solid #c60023;
+  	overflow: hidden;
+  }
+.detail-wrap .table-list .table-item{
+	float: left;
+	padding: 10px;
+	font-size: 17px;
+	color: #999;
+	background: #fff;
+}
+.detail-wrap .table-list .table-item.active{
+	color: #fff;
+	background: #c60023;
+	border: none;
+}
+.detail-wrap .detail-con img{
+	margin: 0 auto;
+}
