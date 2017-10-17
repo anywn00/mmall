@@ -2,7 +2,7 @@
 <li class="p-list-item">
 	<div class="p-img-con">
 		<a href="./detail.html?productId={{id}}" class="link" target="_blank">
-			<img src="{{imageHost}}{{mainImage}}" alt="name" class="p-img">
+			<img src="{{imageHost}}{{mainImage}}" alt="{{name}}" class="p-img">
 		</a>
 	</div>
 	<div class="p-price-con">

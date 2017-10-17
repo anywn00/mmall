@@ -2,7 +2,7 @@
 * @Author: 第九
 * @Date:   2017-10-10 14:05:21
 * @Last Modified by:   第九
-* @Last Modified time: 2017-10-11 17:34:04
+* @Last Modified time: 2017-10-17 14:43:54
 */
 require('./index.css');
 var _mm = require('util/mm.js');
@@ -15,6 +15,7 @@ var page = {
 		this.loadUserInfo();
 		this.loadCartCount();
 		this.bindEvent();
+		return this;
 	},
 	//加载登陆用户信息
 	loadUserInfo: function(){
@@ -54,4 +55,4 @@ var page = {
 
 }
 
-page.init();
+module.exports = page.init();

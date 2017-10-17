@@ -1,8 +1,13 @@
 /*
 * @Author: 第九
 * @Date:   2017-10-12 18:20:26
+<<<<<<< HEAD
 * @Last Modified by:   Administrator
 * @Last Modified time: 2017-10-14 15:51:09
+=======
+* @Last Modified by:   第九
+* @Last Modified time: 2017-10-13 16:45:19
+>>>>>>> mmall_v1.0
 */
 var _mm = require('util/mm.js');
 
@@ -11,7 +16,6 @@ var _product = {
 		_mm.request({
 			url 	: _mm.getServerUrl('/product/list.do'),
 			data 	: productInfo,
-			method 	: 'POST',
 			success : resolve,
 			error 	: reject
 		});
